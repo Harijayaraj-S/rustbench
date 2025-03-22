@@ -2,6 +2,14 @@
 name = "rustbench"
 version = "0.1.0"
 edition = "2021"
+description = "A lightweight Rust procedural macro for benchmarking function execution time."
+license = "MIT"
+keywords = ["benchmark", "performance", "proc-macro", "rust"]
+categories = ["development-tools", "rust-patterns"]
+readme = "README.md"
+
+[badges]
+maintenance = { status = "actively-developed" }
 
 [dependencies]
 proc-macro2 = "1.0.94"
