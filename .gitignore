@@ -1,0 +1,7 @@
+# Ignore Rust build files
+target/
+debug/
+release/
+
+# Ignore Cargo files
+Cargo.lock
