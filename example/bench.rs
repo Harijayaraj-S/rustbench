@@ -5,7 +5,7 @@ fn example_sum() {
     let _: u64 = (1..=1_000_000).sum();
 }
 
-#[benchmark(50)]
+#[benchmark(5)]
 fn example_sum_iteration() {
     let _: u64 = (1..=1_000_000).sum();
 }
