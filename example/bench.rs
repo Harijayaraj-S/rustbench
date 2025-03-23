@@ -1,11 +1,16 @@
 use rustbench::benchmark;
 
 #[benchmark]
-fn sum() {
-    let sum: u64 = (1..=1_000_000).sum();
-    println!("Sum: {}", sum);
+fn example_sum() {
+    let _: u64 = (1..=1_000_000).sum();
+}
+
+#[benchmark(50)]
+fn example_sum_iteration() {
+    let _: u64 = (1..=1_000_000).sum();
 }
 
 fn main() {
-    sum();
+    example_sum_iteration();
+    example_sum();
 }
